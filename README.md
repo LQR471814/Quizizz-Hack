@@ -23,4 +23,4 @@
 ### Once you have the parser downloaded, put the `parser.py` and the file you downloaded earlier in the same folder. Then run `parser.py` and it will output a file called `answers.json`. Open `answers.json` and boom! You have your answers. If you can't read .JSON file format, you should probably learn how to but it isn't hard.
 
 ![alt text](https://github.com/LQR471814/Quizizz-Hack/blob/master/get-answers-2.jpg)
-![alt text](https://github.com/LQR471814/Quizizz-Hack/blob/master/get-answers-3.jpg)
+![alt text](https://github.com/LQR471814/Quizizz-Hack/blob/master/get-answers-4.jpg)
