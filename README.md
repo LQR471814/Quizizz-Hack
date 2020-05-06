@@ -14,7 +14,7 @@
 
 ![alt text](https://github.com/LQR471814/Quizizz-Hack/blob/master/get-answers-1.jpg)
 
-## Step 3: Download the Quizizz Answers parser (You should have python installed to run the answers parser)
+## Step 3: Download the Quizizz Answers parser (You should have python installed to run the answers parser, or you can just use the EXE version)
 
 ### By now technically if you technically already have the answers in the form of that file. Although, that file to someone who isn't technically inclined is basically jibberish. So I modified a parser from an existing Quizizz bot <https://github.com/reteps/quizizz-bot> The bot does not currently work at the time of writing but I got some of the parser code from it.
 
