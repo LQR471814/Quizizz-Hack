@@ -1,6 +1,8 @@
 import json
 
-f = open("QuizizzAnswers.json", "r")
+print("Input the filename of the downloaded file (Make sure you include the file extension)")
+filename = input(" > ")
+f = open(filename, "r")
 quizInfo = json.loads(f.read())
 
 def deUnicode(inp_string):
