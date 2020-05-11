@@ -4,7 +4,7 @@
 
 ## Step 1: Getting the Quiz ID (This will be important later)
 
-### To get your Quiz ID open up Chrome Inspector in the quiz window and go to the network tab. Then find a packet that's request url has something to do with `gameSummaryRec`. Double click it and find the entire Request url. There will be a parameter in the url called `quizId`, just copy the value of that and keep it in a safe place
+### To get your Quiz ID open up Chrome Inspector in the quiz window and go to the network tab (If there is nothing there than reload and keep the inspector open). Then find a packet that's request url has something to do with `gameSummaryRec`. Double click it and find the entire Request url. There will be a parameter in the url called `quizId`, just copy the value of that and keep it in a safe place
 
 ![alt text](https://github.com/LQR471814/Quizizz-Hack/blob/master/get-quizID-1.jpg)
 
