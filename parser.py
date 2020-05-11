@@ -2,7 +2,7 @@ import json
 
 print("Input the filename of the downloaded file (Make sure you include the file extension)")
 filename = input(" > ")
-f = open(filename, "r")
+f = open(filename, "r", encoding="utf8")
 quizInfo = json.loads(f.read())
 
 def deUnicode(inp_string):
