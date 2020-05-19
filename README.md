@@ -16,11 +16,12 @@
 
 ## Step 3: Download the Quizizz Answers parser (You should have python installed to run the answers parser, or you can just use the EXE version)
 
-### By now technically if you technically already have the answers in the form of that file. Although, that file to someone who isn't technically inclined is basically jibberish. So I modified a parser from an existing Quizizz bot <https://github.com/reteps/quizizz-bot> The bot does not currently work at the time of writing but I got some of the parser code from it.
+### By now technically if you already have the answers in the form of that file you downloaded. Although, that file to someone who isn't technically inclined is pretty much jibberish and to someone who is technically inclined may be a bit annoying to read (There are a lot of unnecessary nested dictionaries). So I modified a parser from an existing Quizizz bot <https://github.com/reteps/quizizz-bot> The bot does not currently work at the time of writing but I got some of the parser code from it.
 
 ### You can download an EXE version of the parser at <https://github.com/LQR471814/Quizizz-Hack/releases>
 
 ### Once you have the parser downloaded, put the `parser.py` and the file you downloaded earlier in the same folder. Then run `parser.py` and it will output a file called `answers.json`. Open `answers.json` and boom! You have your answers. If you can't read .JSON file format, you should probably learn how to but it isn't hard.
 
 ![alt text](https://github.com/LQR471814/Quizizz-Hack/blob/master/get-answers-2.jpg)
+
 ![alt text](https://github.com/LQR471814/Quizizz-Hack/blob/master/get-answers-4.jpg)
