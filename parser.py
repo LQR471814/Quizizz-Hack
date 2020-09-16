@@ -34,7 +34,7 @@ for question in quizInfo["data"]["quiz"]["info"]["questions"]:
             else:
                 answer.append(question["structure"]["options"][int(answerC)]["text"])
 
-    questionStr = question["structure"]["query"]["text"]
+    questionStr = question["structure"]["query"]["text"].replace('"', '\\"')
     allAns[questionStr] = answer
 
 f = open("answers.json", "w")
