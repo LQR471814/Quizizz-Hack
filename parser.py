@@ -34,8 +34,13 @@ for question in quizInfo["data"]["quiz"]["info"]["questions"]:
             else:
                 answer.append(question["structure"]["options"][int(answerC)]["text"])
 
-    questionStr = question["structure"]["query"]["text"].replace('"', '\\"')
-    allAns[questionStr] = answer
+    questionStr = question["structure"]["query"]["text"].replace('"', '\\"').replace("<p>", "").replace("</p>", "").replace("<strong>", "").replace("</strong>", "").replace("<br/>", "\n")
+    allAns[questionStr] = answer.replace('"', '\\"').replace("<p>", "").replace("</p>", "").replace("<strong>", "").replace("</strong>", "").replace("<br/>", "\n")
 
-f = open("answers.json", "w")
-f.write(str(json.dumps(allAns, sort_keys=True, indent=2)).replace("<p>", "").replace("</p>", "").encode("utf8").decode("unicode-escape"))
+with open("answers.txt", "w") as f:
+    for i in allAns.keys():
+        f.write(f'QUESTION: {i}\n\nANSWER :{allAns[i]}\n\n\n')
+
+
+# f = open("answers.txt", "w")
+# f.write(str(json.dumps(allAns, sort_keys=True, indent=2)).replace("{", "").replace("}", "").encode("utf8").decode("unicode-escape"))
