@@ -37,5 +37,5 @@ for question in quizInfo["data"]["quiz"]["info"]["questions"]:
     questionStr = question["structure"]["query"]["text"].replace('"', '\\"')
     allAns[questionStr] = answer
 
-f = open("answers.json", "w")
+f = open("answers.json", "w", encoding="utf-8")
 f.write(str(json.dumps(allAns, sort_keys=True, indent=2)).replace("<p>", "").replace("</p>", "").encode("utf8").decode("unicode-escape"))
