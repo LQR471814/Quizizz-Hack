@@ -29,8 +29,8 @@ Getting Quizizz Answers Manually (Without a bot)
 #### So I modified a parser from an existing [Quizizz bot](https://github.com/reteps/quizizz-bot). The bot does not currently work at the time of writing but I got some of the parser code from it.
 
 #### Once you have the parser downloaded:
- - put the `parser.py` and the file you downloaded earlier in the same folder. 
- - run `parser.py` and it will output a file called `answers.json`. 
+ - Put the `parser.py` and the file you downloaded earlier in the same folder. 
+ - Run `parser.py` and it will output a file called `answers.json`. 
  - Open `answers.json` and boom! You have your answers. 
  
  ##### If you can't read .JSON file format, you should probably learn how to but it isn't hard.
