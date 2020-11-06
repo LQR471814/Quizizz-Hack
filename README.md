@@ -15,9 +15,10 @@ Getting Quizizz Answers Manually (Without a bot)
 ### Step 2: Using the Quiz ID to get the answers
 
  - Open your browser go to `https://quizizz.com/quiz/` + `YOUR QUIZ ID` 
+ - Download the text with CTRL + S and store it in a safe place.
  
  #### In this case, it is `https://quizizz.com/quiz/5e9cfb6d707903001b527e47` 
- #### The output should be a load of text (JSON if you actually know what you are doing) Download the text with CTRL + S and store it in a safe place.
+ #### The output should be a load of text (JSON if you actually know what you are doing) 
 
 ![alt text](https://github.com/LQR471814/Quizizz-Hack/blob/master/get-answers-1.jpg)
 
@@ -27,7 +28,12 @@ Getting Quizizz Answers Manually (Without a bot)
 
 #### By now technically if you already have the answers in the form of that file you downloaded. Although, that file to someone who isn't technically inclined is pretty much jibberish and to someone who is technically inclined may be a bit annoying to read (There are a lot of unnecessary nested dictionaries). So I modified a parser from an existing Quizizz bot <https://github.com/reteps/quizizz-bot> The bot does not currently work at the time of writing but I got some of the parser code from it.
 
-#### Once you have the parser downloaded, put the `parser.py` and the file you downloaded earlier in the same folder. Then run `parser.py` and it will output a file called `answers.json`. Open `answers.json` and boom! You have your answers. If you can't read .JSON file format, you should probably learn how to but it isn't hard.
+#### Once you have the parser downloaded:
+ - put the `parser.py` and the file you downloaded earlier in the same folder. 
+ - run `parser.py` and it will output a file called `answers.json`. 
+ - Open `answers.json` and boom! You have your answers. 
+ 
+ ##### If you can't read .JSON file format, you should probably learn how to but it isn't hard.
 
 ![alt text](https://github.com/LQR471814/Quizizz-Hack/blob/master/get-answers-2.jpg)
 
