@@ -24,9 +24,10 @@ Getting Quizizz Answers Manually (Without a bot)
 
 ### Step 3: Download the Quizizz Answers parser 
 ##### You should have python installed to run the answers parser, or you can just use the EXE version
-##### You can download an EXE version of the parser at <https://github.com/LQR471814/Quizizz-Hack/releases>
+##### You can download an EXE version of the parser [here](https://github.com/LQR471814/Quizizz-Hack/releases/latest)
 
-#### By now technically if you already have the answers in the form of that file you downloaded. Although, that file to someone who isn't technically inclined is pretty much jibberish and to someone who is technically inclined may be a bit annoying to read (There are a lot of unnecessary nested dictionaries). So I modified a parser from an existing Quizizz bot <https://github.com/reteps/quizizz-bot> The bot does not currently work at the time of writing but I got some of the parser code from it.
+#### By now technically if you have the answers in the form of that file you downloaded you could read the answers. Although, that file to someone who isn't technically inclined is pretty much jibberish, and to someone who is technically inclined may be a bit annoying to read (There are a lot of unnecessary nested dictionaries). 
+#### So I modified a parser from an existing [Quizizz bot](https://github.com/reteps/quizizz-bot). The bot does not currently work at the time of writing but I got some of the parser code from it.
 
 #### Once you have the parser downloaded:
  - put the `parser.py` and the file you downloaded earlier in the same folder. 
