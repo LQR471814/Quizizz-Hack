@@ -43,7 +43,3 @@ for question in quizInfo["data"]["quiz"]["info"]["questions"]:
 with open("answers.txt", "w", encoding="utf8") as f:
     for i in allAns.keys():
         f.write(f'QUESTION: {i}\n\nANSWER :{allAns[i]}\n\n\n')
-
-
-# f = open("answers.txt", "w")
-# f.write(str(json.dumps(allAns, sort_keys=True, indent=2)).replace("{", "").replace("}", "").encode("utf8").decode("unicode-escape"))
