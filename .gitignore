@@ -1,0 +1,8 @@
+*.json
+answers.txt
+testing.py
+__p*
+build
+dist
+kP*
+*.spec

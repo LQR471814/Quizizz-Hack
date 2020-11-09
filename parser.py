@@ -34,8 +34,12 @@ for question in quizInfo["data"]["quiz"]["info"]["questions"]:
             else:
                 answer.append(question["structure"]["options"][int(answerC)]["text"])
 
-    questionStr = question["structure"]["query"]["text"].replace('"', '\\"')
-    allAns[questionStr] = answer
+    questionStr = question["structure"]["query"]["text"].replace('"', '\\"').replace("<p>", "").replace("</p>", "").replace("<strong>", "").replace("</strong>", "").replace("<br/>", "\n").replace("</span>", "").replace("</mo>", "").replace("</mrow>", "").replace("<mn>", "").replace("</mn>", "").replace("</annotation>", "").replace("</semantics>", "").replace("</math>", "").replace("<span>", "").replace("<math>", "").replace("<semantics>", "").replace("<mrow>", "").replace("<mo>", "").replace("<msup>", "").replace("<mi>", "").replace("</mi>", "").replace("</msup>", "")
+    try:
+        allAns[questionStr] = answer.replace('"', '\\"').replace("<p>", "").replace("</p>", "").replace("<strong>", "").replace("</strong>", "").replace("<br/>", "\n").replace("</span>", "").replace("</mo>", "").replace("</mrow>", "").replace("<mn>", "").replace("</mn>", "").replace("</annotation>", "").replace("</semantics>", "").replace("</math>", "").replace("<span>", "").replace("<math>", "").replace("<semantics>", "").replace("<mrow>", "").replace("<mo>", "").replace("<msup>", "").replace("<mi>", "").replace("</mi>", "").replace("</msup>", "")
+    except AttributeError:
+        allAns[questionStr] = (", ".join(answer)).replace('"', '\\"').replace("<p>", "").replace("</p>", "").replace("<strong>", "").replace("</strong>", "").replace("<br/>", "\n").replace("</span>", "").replace("</mo>", "").replace("</mrow>", "").replace("<mn>", "").replace("</mn>", "").replace("</annotation>", "").replace("</semantics>", "").replace("</math>", "").replace("<span>", "").replace("<math>", "").replace("<semantics>", "").replace("<mrow>", "").replace("<mo>", "").replace("<msup>", "").replace("<mi>", "").replace("</mi>", "").replace("</msup>", "")
 
-f = open("answers.json", "w", encoding="utf-8")
-f.write(str(json.dumps(allAns, sort_keys=True, indent=2)).replace("<p>", "").replace("</p>", "").encode("utf8").decode("unicode-escape"))
+with open("answers.txt", "w", encoding="utf8") as f:
+    for i in allAns.keys():
+        f.write(f'QUESTION: {i}\n\nANSWER :{allAns[i]}\n\n\n')
