@@ -45,9 +45,7 @@ Getting Quizizz Answers Manually (Without a bot)
 
 ![alt text](https://github.com/LQR471814/Quizizz-Hack/blob/master/docs/get-answers-4.jpg)
 
-### Extras
-
-#### Javascript Function that Parses answers (Contributed by xNetcat)
+### Javascript Function that Parses answers (Contributed by xNetcat)
 
 ```javascript
 // Here is the function to parse the json object. 
